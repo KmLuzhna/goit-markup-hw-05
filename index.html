@@ -48,7 +48,7 @@
         <section class="main-section overlay">
             <div class="container">
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="main-button" type="button">Заказать услугу</button>
+                <button class="main-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--Особенности-->
@@ -394,9 +394,13 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <p>hi</p>
+            <button class="close-button" type="button" data-modal-close>
+                <svg class="social-icon" width="11px" height="11px">
+                    <use href="./images/symbol-defs.svg#Vector"></use>
+                </svg>
+            </button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
